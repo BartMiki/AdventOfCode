@@ -1,6 +1,6 @@
 total_sum = 0
 
-with open('day-1-input') as file:
+with open('data/day-1-input') as file:
     for line in file.readlines():
         total_sum += int(line)
 
@@ -12,7 +12,7 @@ all_frequencies = []
 first_repeat = 0
 encountered_so_far = {0}
 
-with open('day-1-input') as file:
+with open('data/day-1-input') as file:
     for line in file.readlines():
         all_frequencies.append(int(line))
 

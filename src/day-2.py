@@ -3,7 +3,7 @@ from collections import Counter
 doubles = 0
 triples = 0
 
-with open('day-2-input') as file:
+with open('data/day-2-input') as file:
     for line in file.readlines():
         c = Counter(line)
         for element in c.elements():
@@ -20,7 +20,7 @@ print(triples)
 print(doubles*triples)
 
 lines = []
-with open('day-2-input') as file:
+with open('data/day-2-input') as file:
     lines = file.readlines()
 
 

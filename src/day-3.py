@@ -16,7 +16,7 @@ def get_cords(x: int, y: int, x_span: int, y_span: int) -> list:
 
 c_list = []
 
-with open('day-3-input') as file:
+with open('data/day-3-input') as file:
     for line in file.readlines():
         result = r.match(line)
         c_list.extend(get_cords(int(result.group(1)), int(result.group(2)), int(result.group(3)), int(result.group(4))))
