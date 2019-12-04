@@ -12,7 +12,7 @@ def calculate_with_fuel(value):
 
 values_part_1 = None
 values_part_2 = None
-with open('../data/day_01.txt') as data:
+with open('data/day_01.txt') as data:
     values = list(map(lambda raw: int(raw.strip()), data.readlines()))
     values_part_1 = map(calculate, values)
     values_part_2 = map(calculate_with_fuel, values)
